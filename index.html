@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>BICICLETERIA</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">TIENDA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li>
+                        <li class="nav-item dropdown">
+                        <div id="carrito" class="position-fixed bottom-0 end-0 p-3 bg-white border shadow" style="z-index: 1050; max-width: 300px;">
+                            <h5>🛒 Carrito</h5>
+                            <ul id="listaCarrito" class="list-unstyled mb-2"></ul>
+                            <strong id="totalCarrito">Total: $0</strong>
+                            <button id="btnFinalizarCompra" class="btn btn-success w-100 mt-2">Realizar compra</button>
+                        </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                     <header class="header">
+                        <a href="index.html">
+                        </a>
+                        <img class="masthead-avatar mb-5" src="img/logotipo.png.png"  width="300" height="300"alt="logotipo">
+                     </header>
+                    <h1 class="display-4 fw-bolder">NUESTROS PRODUCTOS</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">La mejor calidad y precios por años</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="producto__imagen" src="img/casco_1.png" alt="imagen camisa">
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Casco ciclismo</h5>
+                                    <span class="precio" data-producto="casco ciclismo">$</span>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="Casco ciclismo" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                           <img class="producto__imagen" src="img/casco_2.png" alt="imagen camisa">
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Casco m2 </h5>
+
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$18.000</span>
+                                    <span class="precio" data-producto="casco ciclismom2">$</span>
+                                     <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="Casco ciclismom2" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                             <img class="producto__imagen" src="img/casco_3.png" alt="imagen camisa">
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Casco 3</h5>
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$20.000</span>
+                                    <span class="precio" data-producto="casco ciclismo m3">$</span>
+                                     <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="Casco ciclismo m3" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                           <img class="producto__imagen" src="img/guantes_1.png" width="250" height="250" alt="imagen camisa">
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Guantes ciclismo</h5>
+                                    <span class="precio" data-producto="guantes ciclismo">$</span>
+                                     <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="guantes ciclismo" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                           <img class="producto__imagen" src="img/guantes_2.png" alt="imagen camisa">
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Guantes m2</h5>
+                                    <span class="precio" data-producto="guantes ciclismo m2">$</span>
+
+                                     <br>
+                                    <br>
+                                    <br>
+                                    
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="guantes ciclismo m2" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                         
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                             <img class="producto__imagen" src="img/guantes_3.png" alt="imagen camisa">
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Guantes m3</h5>
+                                    <span class="precio" data-producto="guantes ciclismo m3">$</span>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="Casco ciclismo m3" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                              <img class="producto__imagen" src="img/cubiertamaxxi.jpg" alt="imagen camisa">
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Cubierta Maxxis</h5>
+                                    <span class="precio" data-producto="cubierta bici ">$</span>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="cubierta bici" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                              <img class="producto__imagen"  src="img/cubierta_2.jpg" alt="imagen camisa">
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Cubierta Maxxi</h5>
+                                    <span class="precio" data-producto="cubierta bici m2">$</span>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="cubierta bici m2" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                              <img class="producto__imagen" src="img/calza_1.png" alt="imagen camisa">
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Short Ciclismo</h5>
+                                    <span class="precio" data-producto="short ciclismo">$</span>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="short ciclismo" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                     <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                              <img class="producto__imagen" src="img/calza_3.png" alt="imagen camisa">
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Short Ciclismo m2</h5>
+                                    <span class="precio" data-producto="short ciclismo m2">$</span>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <<button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="short ciclismo m2" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                           
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                              <img class="producto__imagen" src="img/cuello-multifuncion.png" alt="imagen camisa">
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Cuello termico</h5>
+                                    <span class="precio" data-producto="cuello termico">$</span>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="cuello termico" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                             <img class="producto__imagen" src="img/remera_1.png" alt="imagen camisa">
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Remera Ciclismo</h5>
+                                    <span class="precio" data-producto="remera ciclismo">$</span>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="remera ciclismo" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                     <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                             <img class="producto__imagen" src="img/remera_2.png" alt="imagen camisa">
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Remera Ciclismo m2</h5>
+                                    <span class="precio" data-producto="remera ciclismo m2">$</span>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="remera ciclismo m2" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                             <img class="producto__imagen" src="img/remera_3.png" alt="imagen camisa">
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Remera Termica M3</h5>
+                                    <span class="precio" data-producto="remera ciclismo m3">$</span>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <i class="bi bi-cart"></i>
+                                    <button type="button" class="btn btn-primary btn-comprar" data-bs-toggle="modal" data-bs-target="#cantidadModal" data-nombre="remera ciclismo m3" data-precio="18000">
+                                        COMPRAR
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">productos con garantia total</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      
+
+        <div class="modal fade" id="cantidadModal" tabindex="-1" aria-labelledby="cantidadModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cantidadModalLabel">Selecciona la cantidad y modelo a comprar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formCantidad">
+                    <div class="mb-3">
+                        <label for="cantidadProducto" class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="cantidadProducto" name="cantidad" min="1" value="1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="talleProducto1" class="form-label">Talle</label>
+                        <select class="form-select" id="talleProducto1" name="talle" required>
+                        <option value="">Seleccionar talle</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <button  class="btn btn-success">
+                        Agregar al carrito
+                    </button>
+                    </form>
+                </div>
+                </div>
+            </div>
+            </div>
+            <!--LECTURA db-->
+    
+            <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+            import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js";
+            
+            // Configuración de Firebase
+            const firebaseConfig = {
+                apiKey: "AIzaSyCIzHJD16BACdvgkynoANYGMdn9cVfV0_U",
+                authDomain: "frontend-store-90664.firebaseapp.com",
+                projectId: "frontend-store-90664",
+                storageBucket: "frontend-store-90664.firebasestorage.app",
+                messagingSenderId: "574653611680",
+                appId: "1:574653611680:web:6cd80915a54e5eeca653c5"
+            };
+            
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+
+            // Leer precios desde Firebase y actualizar HTML
+            
+            async function actualizarPrecios() {
+            try {
+                const querySnapshot = await getDocs(collection(db, "productos"));
+                console.log("✅ Conexión exitosa a Firestore");
+                
+                querySnapshot.forEach((doc) => {
+
+                    const producto = doc.data();
+                    const spanPrecio = document.querySelector(`.precio[data-producto="${producto.nombre}"]`);
+                    if (spanPrecio) {
+                        spanPrecio.textContent = `$${producto.precio.toLocaleString()}`;
+                    }
+                });
+
+            } catch (error) {
+                console.error("❌ Error al conectar con Firestore:", error);
+                alert("Error al conectar con la base de datos.");
+            }
+        }
+
+            
+            actualizarPrecios();
+            
+
+        </script>
+        <script>
+            let productoSeleccionado = null;
+
+            document.querySelectorAll('.btn-comprar').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const card = btn.closest('.card');
+                    const nombre = card.querySelector('h5').innerText.trim();
+                    const spanPrecio = card.querySelector('.precio');
+                    const precioTexto = spanPrecio.textContent.trim().replace('$', '').replace(/\./g, '').replace(',', '.');
+                    const precio = parseFloat(precioTexto);
+
+                    if (!nombre || isNaN(precio)) {
+                        alert("❌ No se pudo obtener el precio del producto. Verifica que esté cargado.");
+                        console.error("Error de precio: ", { nombre, precioTexto, precio });
+                        return;
+                    }
+
+                    productoSeleccionado = { nombre, precio };
+                });
+            });
+
+            const form = document.getElementById('formCantidad');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const cantidad = parseInt(document.getElementById('cantidadProducto').value);
+                const talle = document.getElementById('talleProducto1').value;
+
+                if (!productoSeleccionado || isNaN(cantidad) || !talle) {
+                    alert("Completa todos los campos correctamente.");
+                    return;
+                }
+
+                const totalProducto = productoSeleccionado.precio * cantidad;
+
+                const lista = document.getElementById('listaCarrito');
+                const item = document.createElement('li');
+                item.textContent = `${productoSeleccionado.nombre} x${cantidad} (Talle: ${talle}) - $${totalProducto.toLocaleString()}`;
+                lista.appendChild(item);
+
+                // Calcular total acumulado
+                let totalGeneral = 0;
+                lista.querySelectorAll('li').forEach(li => {
+                    const match = li.textContent.match(/\$([\d.,]+)/);
+                    if (match) {
+                        totalGeneral += parseFloat(match[1].replace(/\./g, '').replace(',', '.'));
+                    }
+                });
+
+                document.getElementById('totalCarrito').textContent = `Total: $${totalGeneral.toLocaleString()}`;
+
+                // Cerrar modal
+                const modal = bootstrap.Modal.getInstance(document.getElementById('cantidadModal'));
+                modal.hide();
+
+                form.reset();
+            });
+        </script>
+        <script>
+            document.getElementById('btnFinalizarCompra').addEventListener('click', () => {
+                const lista = document.getElementById('listaCarrito');
+                if (lista.children.length === 0) {
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'El carrito está vacío',
+                        text: 'Agrega productos antes de finalizar la compra.'
+                    });
+                    return;
+                }
+
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Compra realizada!',
+                    text: 'Gracias por tu compra. Te enviaremos la confirmación por correo.',
+                    confirmButtonText: 'OK'
+                });
+
+                // Limpia el carrito después
+                lista.innerHTML = '';
+                document.getElementById('totalCarrito').textContent = 'Total: $0';
+            });
+        </script>
+
+    </body>
+</html>
